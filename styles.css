@@ -1,0 +1,69 @@
+html {
+  font-size: 10px;
+  background-color: #f8efe4da;
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", serif;
+    color: #353535;
+}
+
+.header {     /*Using Flexbox for controlling the layout of header elements.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fae9ca65;
+  padding: 1rem;
+  box-shadow: inset 0 0 100px 0px #fde091d7;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 5rem); 
+  margin: 0;
+}
+
+p, #img-caption, #tribute-info, h3 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+
+#img-div, h3 {    /**/
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  background-color: #fae9ca65;
+  margin: 2vw auto;
+  padding: 2vw;
+}
+
+#img-div {
+    box-shadow: inset 0 0 10rem 0.1rem #fde091d7;
+}
+
+#img-caption {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+img {
+  display: block;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  min-width: 10rem;
+  max-height: 70rem;
+  border-radius: 0.75rem;
+}
+
+#tribute-info {
+  max-width: 50%;
+  text-align: center;
+  display: block;
+  margin: 5vw auto;
+}
+
+h3 {
+  margin: 2vw;
+  text-align: center;
+  box-shadow: inset 0 0 4rem 0.3rem #fde091d7;
+}
